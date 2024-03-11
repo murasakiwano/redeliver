@@ -4,6 +4,19 @@ This is a really simple CLI that redelivers failed [Hasura](hasura.io) event
 triggers. All it does is leverage the provided API for [pg_get_event_logs][hasura_get_logs]
 and [pg_redeliver_event][hasura_redeliver_event].
 
+## Installation
+
+You need to have the rust toolchain installed. If you don't have it, follow the
+instructions in the official [rust website][rust-website].
+
+Once everything is installed, simply run it with cargo.
+
+```shell
+cargo run -- ARGUMENTS
+```
+
+To install the binary in your local machine, run `cargo install --path .`.
+
 ## Usage
 
 ```shell
@@ -29,3 +42,4 @@ Options:
 
 [hasura_get_logs]: https://hasura.io/docs/latest/api-reference/metadata-api/event-triggers/#metadata-pg-get-event-logs
 [hasura_redeliver_event]: https://hasura.io/docs/latest/api-reference/metadata-api/event-triggers/#metadata-pg-redeliver-event
+[rust-website]: https://www.rust-lang.org/learn/get-started
