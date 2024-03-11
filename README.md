@@ -19,7 +19,7 @@ To install the binary in your local machine, run `cargo install --path .`.
 
 ## Usage
 
-```shell
+```
 Simple program to redeliver undelivered Hasura events
 
 Usage: redeliver [OPTIONS] --event-trigger-name <EVENT_TRIGGER_NAME> <URL>
